@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('kebutuhan_sertifikasi', function (Blueprint $table) {
             $table->id();
+            $table->string('form_nama');
+            $table->string('form_alamat');
+            $table->string('form_no_hp');
+            $table->string('form_sertifikasi');
             $table->timestamps();
         });
     }

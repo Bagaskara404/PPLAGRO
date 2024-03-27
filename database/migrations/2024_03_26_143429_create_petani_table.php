@@ -13,6 +13,13 @@ return new class extends Migration
     {
         Schema::create('petani', function (Blueprint $table) {
             $table->id();
+            $table->string('username_petani');
+            $table->string('pass_petani');
+            $table->string('nama_petani');
+            $table->string('tipe_petani');
+            $table->string('alamat_tani');
+            $table->string('no_hp');
+            $table->string('sertifikasi_tani');
             $table->timestamps();
         });
     }

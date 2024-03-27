@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('lembaga_terverifikasi', function (Blueprint $table) {
             $table->id();
+            $table->string('id_lembaga')->unique();
+            $table->string('id_terverifikai')->unique();
+            $table->string('id_tidak_terverifikasi')->unique();
             $table->timestamps();
         });
     }

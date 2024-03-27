@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('permintaan_sertifikasi_tabel', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_petani');
+            $table->string('alamat_petani');
+            $table->string('no_hp_petani');
+            $table->string('sertifikasi_petani');
             $table->timestamps();
         });
     }
